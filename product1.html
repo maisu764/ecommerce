@@ -1,0 +1,89 @@
+<!-- page#2 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Stylish Watch - Product Details</title>
+ <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<!-- Navigation Bar -->
+<div class="dropdown">
+  <button><b><a href="home.html">Home</a></b></button>
+  <button><b><a href="index.html.">Shop</a></b></button>
+  <button><b><a href="about.html">About Us</a></b></button>
+  <button><b><a href="contactus.html">Contact Us</a></b></button>
+  <button><b><a href="cart.html">Cart</a></b></button>
+</div>
+<hr>
+
+  <div class="product-detail-container">
+    <div class="product-image">
+      <img
+        src="https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?auto=format&fit=crop&w=600"
+        alt="Stylish Watch"
+      />
+    </div>
+
+    <div class="product-details">
+      <h1>Stylish Watch</h1>
+      <p class="price">PKR 2,500/-</p>
+
+      <p class="short-description">
+        A modern and elegant wristwatch that blends fashion and function—perfect for both casual and formal occasions.
+      </p>
+
+      <p class="long-description">
+        This timeless wristwatch features a precision quartz movement, comfortable silicone or leather strap, and water resistance for everyday wear. Its sleek, lightweight design ensures reliable performance while adding a refined touch to your wardrobe.
+      </p>
+
+      <ul class="features">
+        <li>Water resistant up to 30–50 m</li>
+        <li>Soft, comfortable strap (silicone or leather)</li>
+        <li>Quartz movement for accurate timekeeping</li>
+        <li>Lightweight and durable construction</li>
+      </ul>
+
+ <div class="action-buttons">
+  <button class="buy-button">Buy Now</button>
+  <button class="cart-button" onclick="addToCart({ name: 'Stylish Watch', price: 2500 })">
+    <span class="cart-icon">🛒</span> Add to Cart
+  </button>
+</div>
+
+
+      <a href="index.html" class="back-link">← Back to Products</a>
+    </div>
+  </div>
+<script src="cart.js"></script>
+<script>
+  document.querySelector(".cart-button")?.addEventListener("click", function () {
+    addToCart({
+      name: "Stylish Watch",
+      price: 2500
+    });
+  });
+</script>
+<!-- Footer -->
+<footer>
+  <div class="footer-nav">
+    <ul>
+      <li><a href="ourforum.html">Our Forum</a></li>
+      <li><a href="ourpolicy.html">Our Policy</a></li>
+      <li><a href="#">Our Address</a>
+        <div class="address-text">Street No. 123, Block.L, F-8, Islamabad</div>
+      </li>
+    </ul>
+    <div class="social-icons">
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/174/174855.png" alt="Facebook" /></a>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/174/174883.png" alt="Instagram" /></a>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/174/174876.png" alt="YouTube" /></a>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/733/733635.png" alt="Twitter" /></a>
+    </div>
+    <div class="footer-bottom">
+      Copyright &copy; 2025; designed by <span class="designer">Maisu</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

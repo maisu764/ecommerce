@@ -1,0 +1,100 @@
+<!-- product3.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Product 3 - Modern Smartwatch</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- Navigation Bar -->
+
+<hr>
+
+  <div class="dropdown">
+    <button><b><a href="home.html">Home</a></b></button>
+    <button><b><a href="index.html">Shop</a></b></button>
+    <button><b><a href="about.html">About Us</a></b></button>
+    <button><b><a href="myaccount.html">My Account</a></b></button>
+    <button><b><a href="contactus.html">Contact Us</a></b></button>
+  </div>
+  <div class="product-detail-container">
+    <div class="product-image">
+      <img src="https://elements-resized.envatousercontent.com/envato-dam-assets-production/EVA/TRX/70/2b/2c/9c/38/v1_E11/E118P4NQ.png?w=1370&cf_fit=scale-down&q=85&format=auto&s=6a6e4a3359360d31ee69f9aa1cf634ed20ec17407b99625ec38c840ca589d52d" alt="Modern Smartwatch">
+    </div>
+    <div class="product-details">
+      <h1>Modern Smartwatch</h1>
+      <p class="price">PKR 8,499/-</p>
+      <p class="short-description">
+        Sophisticated smartwatch with health tracking and vibrant touchscreen display.
+      </p>
+      <p class="long-description">
+        Stay on top of your fitness and notifications with GPS tracking, heart-rate monitor, and seamless app integration.
+      </p>
+      <ul class="features">
+        <li>Heart rate & sleep tracking</li>
+        <li>Water-resistant (IP68)</li>
+        <li>GPS built-in</li>
+        <li>7-day battery life</li>
+      </ul>
+
+     <div class="action-buttons">
+  <button class="buy-button">Buy Now</button>
+  <button class="cart-button" onclick="addToCart({ name: 'Stylish Watch', price: 2500 })">
+    <span class="cart-icon">🛒</span> Add to Cart
+  </button>
+</div>
+
+
+
+      <a href="shop.html" class="back-link">← Back to Shop</a>
+    </div>
+  </div>
+  <footer>
+    <div class="footer-nav">
+      <ul>
+        <li><a href="#">Our Forum</a></li>
+        <li><a href="#">Our Team</a></li>
+        <li><a href="#">Our Address</a>
+          <div class="address-text">Street No. 123, Block L, F‑8, Islamabad</div>
+        </li>
+        <li><a href="#">Our Policy</a></li>
+      </ul>
+      <div class="footer-bottom">
+        &copy; 2025 Pak Store • Designed by Maisu
+      </div>
+    </div>
+  </footer>
+  <script src="cart.js"></script>
+  <script src="cart.js"></script>
+<script>
+  document.querySelector(".cart-button")?.addEventListener("click", function () {
+    addToCart({
+      name: "Stylish Watch",
+      price: 2500
+    });
+  });
+</script>
+<!-- Footer -->
+<footer>
+  <div class="footer-nav">
+    <ul>
+      <li><a href="ourforum.html">Our Forum</a></li>
+      <li><a href="ourpolicy.html">Our Policy</a></li>
+      <li><a href="#">Our Address</a>
+        <div class="address-text">Street No. 123, Block.L, F-8, Islamabad</div>
+      </li>
+    </ul>
+    <div class="social-icons">
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/174/174855.png" alt="Facebook" /></a>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/174/174883.png" alt="Instagram" /></a>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/174/174876.png" alt="YouTube" /></a>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/733/733635.png" alt="Twitter" /></a>
+    </div>
+    <div class="footer-bottom">
+      Copyright &copy; 2025; designed by <span class="designer">Maisu</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

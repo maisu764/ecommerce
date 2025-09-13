@@ -1,0 +1,101 @@
+<!-- product2.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Product 2 - Elegant Smartphone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- Navigation Bar -->
+
+<hr>
+
+  <div class="dropdown">
+    <button><b><a href="home.html">Home</a></b></button>
+    <button><b><a href="index.html">Shop</a></b></button>
+    <button><b><a href="about.html">About Us</a></b></button>
+    <button><b><a href="myaccount.html">My Account</a></b></button>
+    <button><b><a href="contactus.html">Contact Us</a></b></button>
+  </div>
+  <div class="product-detail-container">
+    <div class="product-image">
+      <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=600" alt="Elegant Smartphone">
+    </div>
+    <div class="product-details">
+      <h1>Elegant Smartphone</h1>
+      <p class="price">PKR 24,999/-</p>
+      <p class="short-description">
+        A sleek, high-performance smartphone with stunning display and long battery life.
+      </p>
+      <p class="long-description">
+        Equipped with a powerful processor, crystal-clear HD camera, and ultra-fast charging—crafted for durability and style.
+      </p>
+      <ul class="features">
+        <li>6.5" AMOLED display</li>
+        <li>48MP Quad-camera</li>
+        <li>5000 mAh battery</li>
+        <li>Ultra-fast charging</li>
+      </ul>
+
+
+     <div class="action-buttons">
+  <button class="buy-button">Buy Now</button>
+  <button class="cart-button" onclick="addToCart({ name: 'Stylish Watch', price: 2500 })">
+    <span class="cart-icon">🛒</span> Add to Cart
+  </button>
+</div>
+
+
+
+      <a href="shop.html" class="back-link">← Back to Shop</a>
+    </div>
+  </div>
+  <footer>
+    <div class="footer-nav">
+      <ul>
+        <li><a href="#">Our Forum</a></li>
+        <li><a href="#">Our Team</a></li>
+        <li><a href="#">Our Address</a>
+          <div class="address-text">Street No. 123, Block L, F‑8, Islamabad</div>
+        </li>
+        <li><a href="#">Our Policy</a></li>
+      </ul>
+      <div class="footer-bottom">
+        &copy; 2025 Pak Store • Designed by Maisu
+      </div>
+    </div>
+  </footer>
+  <script src="cart.js"></script>
+  <script src="cart.js"></script>
+<script>
+  document.querySelector(".cart-button")?.addEventListener("click", function () {
+    addToCart({
+      name: "Stylish Watch",
+      price: 2500
+    });
+  });
+</script>
+<!-- Footer -->
+<footer>
+  <div class="footer-nav">
+    <ul>
+      <li><a href="ourforum.html">Our Forum</a></li>
+      <li><a href="ourpolicy.html">Our Policy</a></li>
+      <li><a href="#">Our Address</a>
+        <div class="address-text">Street No. 123, Block.L, F-8, Islamabad</div>
+      </li>
+    </ul>
+    <div class="social-icons">
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/174/174855.png" alt="Facebook" /></a>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/174/174883.png" alt="Instagram" /></a>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/174/174876.png" alt="YouTube" /></a>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/733/733635.png" alt="Twitter" /></a>
+    </div>
+    <div class="footer-bottom">
+      Copyright &copy; 2025; designed by <span class="designer">Maisu</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

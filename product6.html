@@ -1,0 +1,97 @@
+<!-- product6.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Product 6 - DSLR Camera</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- Navigation Bar -->
+
+<hr>
+
+  <div class="dropdown">
+    <button><b><a href="home.html">Home</a></b></button>
+    <button><b><a href="index.html">Shop</a></b></button>
+    <button><b><a href="about.html">About Us</a></b></button>
+    <button><b><a href="myaccount.html">My Account</a></b></button>
+    <button><b><a href="contactus.html">Contact Us</a></b></button>
+  </div>
+  <div class="product-detail-container">
+    <div class="product-image">
+      <img src="https://elements-resized.envatousercontent.com/envato-dam-assets-production/EVA/TRX/47/81/be/13/50/v1_E11/E11WFIN.png?w=1370&cf_fit=scale-down&q=85&format=auto&s=aeea3b1bdf22d3e66619c0993037dca64125cbb9bf68f22981dc45d04a3f120b" alt="DSLR Camera">
+    </div>
+    <div class="product-details">
+      <h1>DSLR Camera</h1>
+      <p class="price">PKR 139,999/-</p>
+      <p class="short-description">
+        Capture stunning photos and 4K videos with this advanced DSLR camera.
+      </p>
+      <p class="long-description">
+        Features a high-resolution sensor, fast autofocus, and Wi-Fi sharing — ideal for professionals and enthusiasts.
+      </p>
+      <ul class="features">
+        <li>24MP CMOS sensor</li>
+        <li>4K UHD video</li>
+        <li>Wi-Fi & Bluetooth</li>
+        <li>Interchangeable lens</li>
+      </ul>
+     <div class="action-buttons">
+  <button class="buy-button">Buy Now</button>
+  <button class="cart-button" onclick="addToCart({ name: 'Stylish Watch', price: 2500 })">
+    <span class="cart-icon">🛒</span> Add to Cart
+  </button>
+</div>
+
+      <a href="shop.html" class="back-link">← Back to Shop</a>
+    </div>
+  </div>
+  <footer>
+    <div class="footer-nav">
+      <ul>
+        <li><a href="#">Our Forum</a></li>
+        <li><a href="#">Our Team</a></li>
+        <li><a href="#">Our Address</a>
+          <div class="address-text">Street No. 123, Block L, F‑8, Islamabad</div>
+        </li>
+        <li><a href="#">Our Policy</a></li>
+      </ul>
+      <div class="footer-bottom">
+        &copy; 2025 Pak Store • Designed by Maisu
+      </div>
+    </div>
+  </footer>
+  <script src="cart.js"></script>
+  <script src="cart.js"></script>
+<script>
+  document.querySelector(".cart-button")?.addEventListener("click", function () {
+    addToCart({
+      name: "Stylish Watch",
+      price: 2500
+    });
+  });
+</script>
+<!-- Footer -->
+<footer>
+  <div class="footer-nav">
+    <ul>
+      <li><a href="ourforum.html">Our Forum</a></li>
+      <li><a href="ourpolicy.html">Our Policy</a></li>
+      <li><a href="#">Our Address</a>
+        <div class="address-text">Street No. 123, Block.L, F-8, Islamabad</div>
+      </li>
+    </ul>
+    <div class="social-icons">
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/174/174855.png" alt="Facebook" /></a>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/174/174883.png" alt="Instagram" /></a>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/174/174876.png" alt="YouTube" /></a>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/733/733635.png" alt="Twitter" /></a>
+    </div>
+    <div class="footer-bottom">
+      Copyright &copy; 2025; designed by <span class="designer">Maisu</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
